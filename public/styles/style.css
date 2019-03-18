@@ -12,7 +12,7 @@ a {
 
 }
 
-#logo {
+.logo {
     float: left;
     max-width: 12%;
     min-width: 12%;
@@ -22,7 +22,8 @@ a {
 }
 
 h2 {
-    font-size: margin-right: 1%;
+    font-size: 2rem;
+    margin-right: 1%;
     margin-left: 1%;
     color: #FF69B4;
     white-space: nowrap;
@@ -45,7 +46,7 @@ footer {
 }
 
 .parallax {
-    background-image: url(../public/fondfleuri.jpg);
+    background-image: url(../../public/fondfleuri.jpg);
     min-height: 250px;
     background-attachment: fixed;
     background-position: center;
@@ -72,7 +73,7 @@ nav {
     color: #FF1493;
 }
 
-#espace_client {
+.espace_client {
     position: absolute;
     float: right;
     top: 0;
@@ -107,12 +108,12 @@ a:hover {
     color: #FFFFFF;
 }
 
-#news {
+.news {
     display: flex;
     justify-content: space-around;
 }
 
-#produits {
+.produits {
     display: flex;
     justify-content: space-around;
     margin-right: 4%;
@@ -146,7 +147,7 @@ footer li {
     margin-top: 1%;
 }
 
-#presentation p {
+.presentation p {
     text-align: justify;
 }
 
@@ -175,7 +176,7 @@ form {
     padding-bottom: 1%;
 }
 
-#form_h1 {
+.form_h1 {
     text-align: center;
     padding-top: 2%;
     font-size: 200%;
@@ -183,7 +184,7 @@ form {
     font-family: Georgia;
 }
 
-#conditions {
+.conditions {
     overflow: scroll;
     height: 500px;
     margin-left: 2%;
@@ -198,7 +199,7 @@ figcaption {
     text-align: center;
 }
 
-#message {
+.message {
     width: 100%;
     padding: 12px;
     border-radius: 4px;
@@ -225,6 +226,6 @@ textarea {
     padding: 15px;
 }
 
-#top {
+.top {
     display: flex;
 }

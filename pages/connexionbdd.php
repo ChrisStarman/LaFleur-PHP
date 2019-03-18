@@ -1,11 +1,9 @@
 <?php
 
+include "parametres.inc.php";
+
 class connexionbdd
 {
-    const SERVER = "mysql:host=localhost:8888; dbname=baselafleur1; charset=utf8";
-    const LOGIN = "root";
-    const MDP = "root";
-    private $bdd;
     public function __construct()
     {
         try {
@@ -28,7 +26,7 @@ class connexionbdd
                 $categories[$uneCategorie['code']] = $uneCategorie['libelle'];
             }
         } catch (PDOException $e) {
-            exit("Une erreur est survenue :" . $e->getMessage());
+            exit("Une erreur est survenue : " . $e->getMessage());
         }
         return $categories;
     }

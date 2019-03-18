@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html>
+<?php include "./pages/menu.php"?>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-</head>
-
-<body>
-    <ul>
-        <?php
-foreach ($menu as $key->$value) {
-    echo "<li><a href='../pages/catalogue.php?categories=" . $key . "'>" . $value . "</a></li>";
+<ul class="menu_header">
+    <li><a href="./page/index.php" class="menu_header">Accueil</a></li>
+    <?php
+foreach ($menu as $key => $value) {
+    echo "<li><a href='./pages/catalogue.php?categories=" . $key . "' class='menu_header'>" . $value . "</a></li>";
 }
 ?>
-    </ul>
-</body>
-
-</html>
+    <li><a href="./pages/commande.html" class="menu_header">Commande</a></li>
+    <li><a href="./pages/news.html" class="menu_header">News</a></li>
+    <li><a href="./pages/contact.html" class="menu_header">Contact</a></li>
+</ul>
