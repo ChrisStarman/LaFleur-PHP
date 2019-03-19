@@ -8,7 +8,7 @@
                 dignitatis sese efferens insolenter, vir quidem prudens et forensium negotiorum oppido gnarus, sed
                 splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones
                 sunt concitatae graves ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur
-                et crebros.</p><a href="pages/news/news1.html">[Lire l'article]</a>
+                et crebros.</p><a href="pages/news.html">[Lire l'article]</a>
         </article>
         <article>
             <h2>News 2 :</h2>
