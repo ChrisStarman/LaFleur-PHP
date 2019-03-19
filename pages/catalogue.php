@@ -1,4 +1,8 @@
 <?php
+
+$categorieRecherchee = $_GET["categories"];
 include_once "connexionbdd.php";
-include "../vues/header.vue.php";
+include_once "../vues/header.vue.php";
+$produitsParCategorie = $bdd->produitsParCategorie($categorieRecherchee);
+include_once "../vues/catalogue.vue.php";
 include "../vues/footer.vue.php";
