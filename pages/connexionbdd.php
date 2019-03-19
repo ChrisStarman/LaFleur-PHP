@@ -50,6 +50,20 @@ class connexionbdd
         return $produitsTrouves;
     }
 
+    public function libelleCategorie($categorieRecherchee)
+    {
+        try {
+            $requete = $this->bdd->prepare('SELECT libelle FROM categories WHERE code=:categorie');
+            $requete->execute(['categorie' => $categorieRecherchee]);
+            $enregistrement = $requete->fetch();
+            $libelleCategorie = $enregistrement['libelle'];
+            return $libelleCategorie;
+
+        } catch (PDOException $e) {
+            exit("Une erreur est survenue : " . $e->getMessage());
+        }
+    }
+
     public function __destruct()
     {
         $this->bdd = null;

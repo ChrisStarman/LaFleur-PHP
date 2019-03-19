@@ -1,3 +1,5 @@
+<h1><?php echo $libelleCategorie; ?></h1>
+
 <?php foreach ($produitsParCategorie as $produit) {
     echo
     "<section>
